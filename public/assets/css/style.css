@@ -1,0 +1,82 @@
+/* PreLoad Data CSS Begin */
+    #loader-wrapper {
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: #f1f1f1;
+        /* z-index: 99999999; */
+    }
+    #loader { 
+        width: 60px;
+        height: 60px;
+        border: 10px solid lightgrey;
+        border-radius: 50%;
+        position: relative;
+    }
+    #loader::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 50%;
+        border: 10px solid transparent;
+        border-left-color: crimson;
+        margin: -22%;
+        -webkit-animation: rotation 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+        animation: rotation 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    }
+
+    @-webkit-keyframes rotation {
+        to {
+            -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+        }
+    }
+    
+    @keyframes rotation {
+        to {
+            -webkit-transform: rotate(3turn);
+            transform: rotate(3turn);
+        }
+    }
+    
+/* PreLoad Data CSS End */
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.info-body {
+    margin:  10px 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-employee-container, .card-company-contrainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.card-employee-container  img, .card-company-contrainer img {
+    max-width: 300px;
+}
