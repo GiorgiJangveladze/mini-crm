@@ -25,8 +25,8 @@ window.removeItemHandle = (elementId, method) => {
                 complete:function(data)
                 {
                     if( data.responseJSON.type == 422 ){
-                        alertify.alert(data.responseJSON.errors, function() {
-                            alertify.error(data.responseJSON.errors)
+                        alertify.alert(data.responseJSON.errors[0], function() {
+                            alertify.error(data.responseJSON.errors[0])
                         });
                     } else if(data.responseJSON.type == 200) {
                         $('#' + elementId).fadeOut(() => {
