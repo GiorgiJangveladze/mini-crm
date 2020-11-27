@@ -10,6 +10,8 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="{{asset('/adminTemplate/bower_components/font-awesome/css/font-awesome.min.css')}}">
 
+<!-- Ionicons -->
+<link rel="stylesheet" href="{{asset('/adminTemplate/bower_components/Ionicons/css/ionicons.min.css')}}">
 
 <link rel="stylesheet" href="{{asset('/adminTemplate/dist/css/AdminLTE.css')}}">
 <!-- AdminLTE Skins. Choose a skin from the css/skins
